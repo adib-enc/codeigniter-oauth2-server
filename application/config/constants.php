@@ -52,18 +52,7 @@ define('SHOW_DEBUG_BACKTRACE', TRUE);
 |--------------------------------------------------------------------------
 | Exit Status Codes
 |--------------------------------------------------------------------------
-|
-| Used to indicate the conditions under which the script is exit()ing.
-| While there is no universal standard for error codes, there are some
-| broad conventions.  Three such conventions are mentioned below, for
-| those who wish to make use of them.  The CodeIgniter defaults were
-| chosen for the least overlap with these conventions, while still
-| leaving room for others to be defined in future versions and user
-| applications.
-|
-| The three main conventions used for determining exit status codes
-| are as follows:
-|
+|   complies
 |    Standard C/C++ Library (stdlibc):
 |       http://www.gnu.org/software/libc/manual/html_node/Exit-Status.html
 |       (This link also contains other GNU-specific conventions)
