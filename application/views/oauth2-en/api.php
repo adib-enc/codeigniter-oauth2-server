@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>夏日小草</title>
+    <title>Summer grass</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="As we do,as you know.">
     <meta property="og:type" content="website">
@@ -15,17 +15,16 @@
     <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<?= base_url() ?>
-<div class="row">
 
+<div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <br><br>
         <form class="form-inline">
-            <h1>0x01.Access Token获取的四种途径</h1><br><br>
+            <h1>0x01.Four ways to obtain Access Token</h1><br><br>
 
             <div class="form-group">
-                <label for="Credentials"><h3>第一种：用户口令（Resource Owner Password Credentials）:</h3><br>
+                <label for="Credentials"><h3>The first type: user password (Resource Owner Password Credentials):</h3><br>
                     <div>发送的数据：<code>{ grant_type: "password", username: "user", password: "pass", client_id: 'testclient', client_secret:'testpass', scope:'userinfo cloud file node' }</code></div><br>
                     <div>收到的数据：<code id="return-PasswordCredentials"></code></div><br>
                 </label><br>
@@ -34,7 +33,7 @@
             <br><br>
 
             <div class="form-group">
-                <label for="ClientCredentials"><h3>第二种：应用授权（Client Credentials）:</h3><br>
+                <label for="ClientCredentials"><h3>The second type: Application authorization (Client Credentials):</h3><br>
                     <div>发送的数据：<code>{client_id: 'testclient', client_secret:'testpass', grant_type:'client_credentials', scope:'userinfo cloud file node'}</code></div><br>
                     <div>收到的数据：<code id="return-ClientCredentials"></code></div><br>
                 </label><br>
@@ -44,7 +43,7 @@
 
             <div class="form-group">
                 <label for="authorize">
-                    <h3>第三种：授权码通过code获取access_token（Authorization Code）:</h3>
+                    <h3>The third type: the authorization code obtains access_token through code (Authorization Code):</h3>
                     <div>发送的数据：<code>{code: "Authorize 跳转后得到的code", client_id: 'testclient', client_secret:'testpass', password:'testpass', grant_type: 'authorization_code', scope:'user pass'}</code></div><br>
                     <div>收到的数据：<code id="return-Authorize"></code></div><br>
                     <div>code参数 请通过`<a target="_blank" href="/oauth2/authorize?response_type=code&client_id=testclient&redirect_uri=http://homeway.me/&state=xyz&scope=">/oauth2/authorize?response_type=code&client_id=testclient&redirect_uri=http://homeway.me/&state=xxx&scope=</a>`跳转后取得。</div><br>
@@ -62,7 +61,7 @@
             </div>
 
             <br><br><br>
-            <h1>0x02.Access Token 管理与应用</h1>
+            <h1>0x02.Access Token Management and Application</h1>
             <br><br><br>
 
             <div class="form-group">
@@ -93,7 +92,7 @@
 
 <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script>
-var baseUrl = "<?= base_url()?>"
+var baseUrl = "<?= base_url() ?>"
 $(document).ready(function(){
     $("#btn-refresh").click(function (e){
         var data = {
